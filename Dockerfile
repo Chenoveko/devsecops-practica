@@ -1,7 +1,7 @@
 FROM python:3.11
 
 # No ejecutar como root
-RUN adduser -D appuser
+RUN useradd -m appuser
 
 WORKDIR /app
 
