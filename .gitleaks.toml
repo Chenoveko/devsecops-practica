@@ -1,0 +1,10 @@
+title = "Gitleaks Config"
+
+[allowlist]
+description = "Allowlist global"
+
+[[rules]]
+id = "generic-api-key"
+description = "Detecta API keys genéricas"
+regex = '''(?i)(api_key|apikey|secret|password|passwd|token)\s*=\s*['"][^\s'"]{8,}['"]'''
+tags = ["key", "secret"]
